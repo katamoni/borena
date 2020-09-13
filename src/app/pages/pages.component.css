@@ -1,0 +1,24 @@
+.subnav{
+    list-style-type: none;
+}
+a{
+    margin:5px;
+    font-size:18px;
+    color:darkblue;
+}
+a:hover{
+    color:red;
+    text-decoration: none;
+}
+.nav-lists{
+    margin:5px;
+    background: palegoldenrod;
+    height:100%;
+    text-align:center;
+    width:25%;
+}
+.active-link{
+    text-decoration: none;
+    color:green !important;
+   
+}

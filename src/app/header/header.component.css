@@ -1,0 +1,40 @@
+      /* first-nav */
+.first-nav ul li a{
+  padding:0px 10px;
+  color:darkgreen;
+}
+.mobile-mail li a{
+    margin:10px;
+}
+
+   /* second-nav */
+
+.second-nav{
+    background:#152d3f;
+}
+.second-nav a{
+    color:#ffeac9;
+}
+.second-nav .navbar-brand{
+    font-size:30px;
+}
+.second-nav .dropdown-menu{
+    border:none;
+    background: rgba(0,0,0,0.4);
+}
+.second-nav .nav-item a:hover{
+    color:#f0ad4e;
+}
+.second-nav .dropdown-menu a:hover{
+    background: rgb(72, 75, 72);
+    color:white;
+}
+
+  
+.nav-hover{
+    margin:auto 10px;
+}
+.nav-hover:hover{
+    text-decoration: none;
+}
+

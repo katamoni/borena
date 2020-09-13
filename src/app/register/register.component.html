@@ -1,0 +1,45 @@
+ <style>
+   small{
+     color:red;
+     margin-left:10px;
+     margin-top:4px;
+   }
+ </style>
+
+ <form [formGroup]="register1">
+  <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header text-center">
+       <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+       
+     </div>
+     <div class="modal-body mx-3">
+       <div class="md-form mb-4 d-flex flex-column">
+           <input type="text" formControlName="name" class="form-control validate mx-2" placeholder="Enter Your Name">
+           <small *ngIf="register1.controls.name.hasError('required') && register1.controls.name.touched">Name is Required</small>
+           <small *ngIf="register1.controls.name.hasError('pattern')">must enter 6-15 letters</small>
+        </div>
+       <div class="md-form mb-4 d-flex flex-column">
+          <input type="email" formControlName="emailid" class="form-control validate mx-2" placeholder="Enter Your EmailId">
+          <small *ngIf="register1.controls.emailid.hasError('required') && register1.controls.emailid.touched">Email is Required</small>
+          <small *ngIf="register1.controls.emailid.hasError('pattern')">Enter Valid Email Id</small>
+       </div>
+
+       <div class="md-form mb-4 d-flex flex-column">
+          <input type="password" formControlName="password" class="form-control validate mx-2" placeholder="Enter Your Password">
+          <small *ngIf="register1.controls.password.hasError('required') && register1.controls.password.touched">Password is Required</small>
+          <small *ngIf="register1.controls.password.hasError('pattern')">The password should be between 8 to 15 letters</small>
+       </div>
+       <div class="md-form mb-4 d-flex flex-column">
+            <input type="number" formControlName="mobile" class="form-control validate mx-2" placeholder="Enter Your Mobile Number">
+            <small *ngIf="register1.controls.mobile.hasError('required') && register1.controls.mobile.touched">Mobile is Required</small>
+            <small *ngIf="register1.controls.mobile.hasError('pattern')">Mobile number should have 10 digits</small>
+        </div>
+     </div>
+     <div class="modal-footer d-flex justify-content-center">
+       <input type="button" (click)="submitted()" value="Sign Up" class="btn btn-primary text-white w-75">
+     </div>
+   </div>
+ </div>
+    
+</form>
